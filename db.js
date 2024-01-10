@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 
 async function connectToDatababase() {
   mongoose
-    .connect(
-      "mongodb+srv://iqlipse22:Uprvmz9ikr@rizzquiz.uef0j36.mongodb.net/?retryWrites=true&w=majority"
-    )
+    .connect("mongodb+srv://iqlipse22:Uprvmz9ikr@cluster0.xkqjppx.mongodb.net/")
     .then(() => {
       console.log("mongodb connected");
     })
