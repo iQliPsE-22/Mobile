@@ -23,7 +23,6 @@ nav {
 a {
     text-decoration: none;
     color: #333;
-
 }
 
 .logo a {
@@ -117,3 +116,58 @@ a {
     opacity: 0.8;
 }
 
+/* Responsive Styles */
+
+/* Add this media query at the end of your CSS to make it responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .menu ul li {
+        margin-right: 10px;
+    }
+
+    .pic {
+        height: 50vh;
+    }
+
+    .pic img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .product {
+        padding: 10px;
+    }
+    .product img{
+        width: 50%;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .card-text {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
