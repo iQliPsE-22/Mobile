@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
 
-async function connectToDatabase() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  console.log("Database connected");
+async function connectToDatababase() {
+  mongoose
+    .connect(
+      "mongodb+srv://iqlipse22:Uprvmz9ikr@rizzquiz.uef0j36.mongodb.net/?retryWrites=true&w=majority"
+    )
+    .then(() => {
+      console.log("mongodb connected");
+    })
+    .catch(() => {
+      console.log("error");
+    });
 }
-
-module.exports = connectToDatabase;
+module.exports = connectToDatababase;
